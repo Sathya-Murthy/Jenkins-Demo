@@ -1,0 +1,95 @@
+[
+    {
+        "Id": "sha256:1a71a32a0853017c0789c339729a17c6277312b8513771b0e95bf160499b0d18",
+        "RepoTags": [
+            "user-service:latest",
+            "sathyamurthyr/user-service:1.0",
+            "sathyamurthyr/user-service:1.1",
+            "sathyamurthyr/userservice:1.1"
+        ],
+        "RepoDigests": [
+            "sathyamurthyr/user-service@sha256:4fd8e3c14630c45f326e1722d924d192022e892a82f488af7870f5180ce95ce8",
+            "sathyamurthyr/userservice@sha256:4fd8e3c14630c45f326e1722d924d192022e892a82f488af7870f5180ce95ce8"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-09-20T05:53:53.895011391Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/java/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/usr/java/openjdk-21",
+                "LANG=C.UTF-8",
+                "JAVA_VERSION=21-ea+20"
+            ],
+            "Cmd": null,
+            "Image": "",
+            "Volumes": {
+                "/tmp": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "java",
+                "-jar",
+                "app.jar"
+            ],
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 543253177,
+        "VirtualSize": 543253177,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/d3e89e0dff7f79f62bc94f8f2e3d2a11e1b2258aece9596fbee08adca7a028f3/diff:/var/lib/docker/overlay2/95bc226444e5350a7f3b71e75f5af61c8b2621369b24d9d9097527d1bfc0835c/diff:/var/lib/docker/overlay2/7bbbd44926150548533cf4a6fdffa746ce13d1d5a5b13ce16317e42539520a28/diff",
+                "MergedDir": "/var/lib/docker/overlay2/oxhm2tmwbanouztdq7c3pzkdt/merged",
+                "UpperDir": "/var/lib/docker/overlay2/oxhm2tmwbanouztdq7c3pzkdt/diff",
+                "WorkDir": "/var/lib/docker/overlay2/oxhm2tmwbanouztdq7c3pzkdt/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:caefa4e45110eab274ebbdbc781f9227229f947f8718cee62ebeff1aac8f1d5b",
+                "sha256:ba15fa05d239f26097ca0288141576024db013a267c10985531ebf6e58e45356",
+                "sha256:e621bc7204379164def6f62caaa8c45ecad53b906ab7c1c3d22f050f14157c3a",
+                "sha256:7e7ed24d49edb29e69551e0e5864d850f5597b773fc3fc56c816155f6c7f28af"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-09-20T09:56:13.821660448Z"
+        }
+    }
+]

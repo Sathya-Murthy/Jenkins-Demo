@@ -1,0 +1,364 @@
+Attaching to docker-postgres-springboot-demo-app, docker-postgres-springboot-demo-db
+docker-postgres-springboot-demo-db   | The files belonging to this database system will be owned by user "postgres".
+docker-postgres-springboot-demo-db   | This user must also own the server process.
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | The database cluster will be initialized with locale "en_US.utf8".
+docker-postgres-springboot-demo-db   | The default database encoding has accordingly been set to "UTF8".
+docker-postgres-springboot-demo-db   | The default text search configuration will be set to "english".
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | Data page checksums are disabled.
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+docker-postgres-springboot-demo-db   | creating subdirectories ... ok
+docker-postgres-springboot-demo-db   | selecting dynamic shared memory implementation ... posix
+docker-postgres-springboot-demo-db   | selecting default max_connections ... 100
+docker-postgres-springboot-demo-db   | selecting default shared_buffers ... 128MB
+docker-postgres-springboot-demo-db   | selecting default time zone ... Etc/UTC
+docker-postgres-springboot-demo-db   | creating configuration files ... ok
+docker-postgres-springboot-demo-db   | running bootstrap script ... ok
+docker-postgres-springboot-demo-db   | performing post-bootstrap initialization ... ok
+docker-postgres-springboot-demo-db   | syncing data to disk ... ok
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | Success. You can now start the database server using:
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | waiting for server to start....2023-09-21 16:56:12.191 UTC [48] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.196 UTC [48] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.212 UTC [49] LOG:  database system was shut down at 2023-09-21 16:56:11 UTC
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.225 UTC [48] LOG:  database system is ready to accept connections
+docker-postgres-springboot-demo-db   |  done
+docker-postgres-springboot-demo-db   | server started
+docker-postgres-springboot-demo-app  | 
+docker-postgres-springboot-demo-app  |   .   ____          _            __ _ _
+docker-postgres-springboot-demo-app  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+docker-postgres-springboot-demo-app  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+docker-postgres-springboot-demo-app  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+docker-postgres-springboot-demo-app  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+docker-postgres-springboot-demo-app  |  =========|_|==============|___/=/_/_/_/
+docker-postgres-springboot-demo-app  |  :: Spring Boot ::                (v3.1.3)
+docker-postgres-springboot-demo-app  | 
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:12.456Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : Starting BankSystemApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:12.461Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+docker-postgres-springboot-demo-db   | CREATE DATABASE
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.749 UTC [48] LOG:  received fast shutdown request
+docker-postgres-springboot-demo-db   | waiting for server to shut down....2023-09-21 16:56:12.755 UTC [48] LOG:  aborting any active transactions
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.761 UTC [48] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.763 UTC [50] LOG:  shutting down
+docker-postgres-springboot-demo-db   | 2023-09-21 16:56:12.798 UTC [48] LOG:  database system is shut down
+docker-postgres-springboot-demo-db   |  done
+docker-postgres-springboot-demo-db   | server stopped
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-db   | PostgreSQL init process complete; ready for start up.
+docker-postgres-springboot-demo-db   | 
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:14.187Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:14.310Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:15.613Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:15.639Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:15.640Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:15.802Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:15.805Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3197 ms
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:16.220Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:16.367Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:16.377Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:16.929Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:17.541Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:17.603Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:18.079Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24f43aa3
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:18.085Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:18.706Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:21.620Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:21.819Z  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:21.820Z  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "bank_account" does not exist, skipping
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:22.012Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:23.900Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:24.818Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+docker-postgres-springboot-demo-app  | 2023-09-21T16:56:24.844Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : Started BankSystemApplication in 13.521 seconds (process running for 14.72)
+docker-postgres-springboot-demo-app  | 2023-09-21T16:59:17.302Z  INFO 1 --- [nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+docker-postgres-springboot-demo-app  | 2023-09-21T16:59:17.303Z  INFO 1 --- [nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+docker-postgres-springboot-demo-app  | 2023-09-21T16:59:17.308Z  INFO 1 --- [nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+strange_keldysh                      | 
+strange_keldysh                      |   .   ____          _            __ _ _
+strange_keldysh                      |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+strange_keldysh                      | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+strange_keldysh                      |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+strange_keldysh                      |   '  |____| .__|_| |_|_| |_\__, | / / / /
+strange_keldysh                      |  =========|_|==============|___/=/_/_/_/
+strange_keldysh                      |  :: Spring Boot ::                (v3.1.3)
+strange_keldysh                      | 
+strange_keldysh                      | 2023-09-21T17:06:25.450Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : Starting BankSystemApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+strange_keldysh                      | 2023-09-21T17:06:25.456Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+strange_keldysh                      | 2023-09-21T17:06:27.086Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+strange_keldysh                      | 2023-09-21T17:06:27.206Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interfaces.
+strange_keldysh                      | 2023-09-21T17:06:28.449Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+strange_keldysh                      | 2023-09-21T17:06:28.472Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+strange_keldysh                      | 2023-09-21T17:06:28.472Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+strange_keldysh                      | 2023-09-21T17:06:28.629Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+strange_keldysh                      | 2023-09-21T17:06:28.632Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3044 ms
+strange_keldysh                      | 2023-09-21T17:06:28.971Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+strange_keldysh                      | 2023-09-21T17:06:29.161Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+strange_keldysh                      | 2023-09-21T17:06:29.168Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+strange_keldysh                      | 2023-09-21T17:06:29.489Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+strange_keldysh                      | 2023-09-21T17:06:29.831Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+strange_keldysh                      | 2023-09-21T17:06:29.869Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+strange_keldysh                      | 2023-09-21T17:06:41.018Z ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+strange_keldysh                      | 
+strange_keldysh                      | org.postgresql.util.PSQLException: The connection attempt failed.
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at com.example.demo.BankSystemApplication.main(BankSystemApplication.java:9) ~[classes!/:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+strange_keldysh                      | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+strange_keldysh                      | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+strange_keldysh                      | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	... 54 common frames omitted
+strange_keldysh                      | 
+strange_keldysh                      | 2023-09-21T17:06:41.031Z  WARN 1 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+strange_keldysh                      | 
+strange_keldysh                      | org.postgresql.util.PSQLException: The connection attempt failed.
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:230) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:198) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at com.example.demo.BankSystemApplication.main(BankSystemApplication.java:9) ~[classes!/:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+strange_keldysh                      | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+strange_keldysh                      | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+strange_keldysh                      | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	... 54 common frames omitted
+strange_keldysh                      | 
+strange_keldysh                      | 2023-09-21T17:06:41.544Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+strange_keldysh                      | 2023-09-21T17:06:42.780Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+strange_keldysh                      | 2023-09-21T17:06:42.812Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+strange_keldysh                      | 2023-09-21T17:06:43.815Z ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+strange_keldysh                      | 
+strange_keldysh                      | org.postgresql.util.PSQLException: The connection attempt failed.
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.getIsolatedConnection(GenerationTargetToDatabase.java:60) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:110) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:77) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:235) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:219) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:362) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:242) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+strange_keldysh                      | 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.7.Final.jar!/:6.2.7.Final]
+strange_keldysh                      | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+strange_keldysh                      | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar!/:3.1.3]
+strange_keldysh                      | 	at com.example.demo.BankSystemApplication.main(BankSystemApplication.java:9) ~[classes!/:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+strange_keldysh                      | 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+strange_keldysh                      | 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[app.jar:0.0.1-SNAPSHOT]
+strange_keldysh                      | Caused by: java.net.UnknownHostException: docker-postgres-springboot-demo-db
+strange_keldysh                      | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:562) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+strange_keldysh                      | 	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+strange_keldysh                      | 	... 63 common frames omitted
+strange_keldysh                      | 
+strange_keldysh                      | 2023-09-21T17:06:43.821Z  WARN 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08001
+strange_keldysh                      | 2023-09-21T17:06:43.822Z ERROR 1 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : The connection attempt failed.
+strange_keldysh                      | 2023-09-21T17:06:43.840Z ERROR 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+strange_keldysh                      | 2023-09-21T17:06:43.841Z  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [The connection attempt failed.] [n/a]
+strange_keldysh exited with code 130
+strange_keldysh                      | 
+strange_keldysh                      |   .   ____          _            __ _ _
+strange_keldysh                      |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+strange_keldysh                      | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+strange_keldysh                      |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+strange_keldysh                      |   '  |____| .__|_| |_|_| |_\__, | / / / /
+strange_keldysh                      |  =========|_|==============|___/=/_/_/_/
+strange_keldysh                      |  :: Spring Boot ::                (v3.1.3)
+strange_keldysh                      | 
+strange_keldysh                      | 2023-09-21T17:09:25.961Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : Starting BankSystemApplication v0.0.1-SNAPSHOT using Java 21-ea with PID 1 (/app.jar started by root in /)
+strange_keldysh                      | 2023-09-21T17:09:25.967Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : No active profile set, falling back to 1 default profile: "default"
+strange_keldysh                      | 2023-09-21T17:09:27.681Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+strange_keldysh                      | 2023-09-21T17:09:27.812Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interfaces.
+strange_keldysh                      | 2023-09-21T17:09:29.443Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8096 (http)
+strange_keldysh                      | 2023-09-21T17:09:29.476Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+strange_keldysh                      | 2023-09-21T17:09:29.477Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+strange_keldysh                      | 2023-09-21T17:09:29.690Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+strange_keldysh                      | 2023-09-21T17:09:29.693Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3577 ms
+strange_keldysh                      | 2023-09-21T17:09:30.107Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+strange_keldysh                      | 2023-09-21T17:09:30.457Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+strange_keldysh                      | 2023-09-21T17:09:30.471Z  INFO 1 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+strange_keldysh                      | 2023-09-21T17:09:31.217Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+strange_keldysh                      | 2023-09-21T17:09:32.086Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+strange_keldysh                      | 2023-09-21T17:09:32.207Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+strange_keldysh                      | 2023-09-21T17:09:32.780Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f8908f6
+strange_keldysh                      | 2023-09-21T17:09:32.788Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+strange_keldysh                      | 2023-09-21T17:09:33.615Z  INFO 1 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+strange_keldysh                      | 2023-09-21T17:09:35.049Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+strange_keldysh                      | 2023-09-21T17:09:35.202Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+strange_keldysh                      | 2023-09-21T17:09:35.868Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+strange_keldysh                      | 2023-09-21T17:09:36.698Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8096 (http) with context path ''
+strange_keldysh                      | 2023-09-21T17:09:36.721Z  INFO 1 --- [           main] com.example.demo.BankSystemApplication   : Started BankSystemApplication in 11.633 seconds (process running for 12.778)
+strange_keldysh                      | 2023-09-21T17:10:01.549Z  INFO 1 --- [nio-8096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+strange_keldysh                      | 2023-09-21T17:10:01.550Z  INFO 1 --- [nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+strange_keldysh                      | 2023-09-21T17:10:01.560Z  INFO 1 --- [nio-8096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
